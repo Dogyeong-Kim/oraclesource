@@ -9,9 +9,17 @@
 -- c## 사용하지 않을때
 ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
 
+-- @C:\all\soldesk\product\21c\dbhomeXE\rdbms\admin\scott.sql
+
 -- 비밀번호 변경
 -- 비밀번호 대소문자 구별함
 ALTER USER hr IDENTIFIED BY hr;
 
 -- 계정 잠금 해제
 -- ALTER USER hr account unlock;
+
+-- 데이터사전 DBA_USERS를 사용하여 정보 조회
+SELECT * FROM DBA_USERS WHERE USERNAME = 'SCOTT'
+
+-- SCOTT VIEW 생성 권한 부여
+GRANT CREATE VIEW TO SCOTT;
