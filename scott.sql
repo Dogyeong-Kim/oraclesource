@@ -1108,7 +1108,7 @@ LOGIN_PWD VARCHAR2(20) NOT NULL, TEL VARCHAR2(20));
 
 INSERT INTO TBL_PK(LOGIN_ID, LOGIN_PWD, TEL) VALUES('hong123', 'pw123', '010-1234-5678');
 
--- 다른 테이블과 관계를 맺는 키 : 왜래키(FK)
+-- 다른 테이블과 관계를 맺는 키 : 외래키(FK)
 -- JOIN 구문 EMP(DEPTNO), DEPT(DEPTNO)
 -- TEMP 테이블에 DEPTNO 는 DEPT 테이블의 DEPTNO 값을 참조해서 삽입
 
